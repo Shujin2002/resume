@@ -31,7 +31,16 @@
     display: block;
   }
   
-  /* 根据需要修改其他元素的样式 */
+  .one-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.one-line h3 {
+    width: 100%;
+}
 }
 
 
