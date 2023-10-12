@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
+
+
 :root{
   --blue:#2980b9;
   --black:#333;
@@ -9,6 +11,21 @@
   --box-shadow:0 5px 10px rgba(0,0,0,.1);
 }
 
+/* 媒体查询，当屏幕宽度小于等于手机宽度时应用这些样式 */
+@media (max-width: 480px) {
+  .experience {
+      font-size: 16px; /* 设置较小的字体大小 */
+  }
+  
+  .one-line {
+      flex-direction: column; /* 改为垂直排列 */
+      align-items: flex-start; /* 左对齐 */
+  }
+  
+  .box h3 {
+      white-space: normal; /* 取消强制换行 */
+  }
+}
 *{
   font-family: 'Poppins', sans-serif;
   margin:0; padding:0;
