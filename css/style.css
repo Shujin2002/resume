@@ -11,21 +11,30 @@
   --box-shadow:0 5px 10px rgba(0,0,0,.1);
 }
 
-/* 媒体查询，当屏幕宽度小于等于手机宽度时应用这些样式 */
-@media (max-width: 480px) {
+@media only screen and (max-width: 600px) {
+  /* 在屏幕宽度小于600px时应用以下样式 */
   .experience {
-      font-size: 16px; /* 设置较小的字体大小 */
+    /* 可以调整元素的宽度或布局 */
+    width: 100%;
+    display: block;
   }
   
-  .one-line {
-      flex-direction: column; /* 改为垂直排列 */
-      align-items: flex-start; /* 左对齐 */
+  .box-container {
+    /* 可以调整元素的宽度或布局 */
+    width: 100%;
+    display: block;
   }
   
-  .box h3 {
-      white-space: normal; /* 取消强制换行 */
+  .box {
+    /* 可以调整元素的宽度或布局 */
+    width: 100%;
+    display: block;
   }
+  
+  /* 根据需要修改其他元素的样式 */
 }
+
+
 *{
   font-family: 'Poppins', sans-serif;
   margin:0; padding:0;
